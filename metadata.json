@@ -1,0 +1,6 @@
+{
+  "name": "PhishGuard - Cybersecurity Training & Simulation",
+  "description": "An interactive cybersecurity phishing simulation and employee training platform featuring simulated awareness campaigns, interactive red-flag inspection sandboxes, AI threat analysis, and educational teardown modules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
