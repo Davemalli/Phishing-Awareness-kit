@@ -173,17 +173,17 @@ export default function App() {
   };
 
   const handleDemoSimulateDrill = () => {
-    // Randomize drill wave metrics
+    // Increment drill wave counters on active campaigns
     setCampaigns((prev) =>
       prev.map((c, i) =>
         i === 0
           ? {
               ...c,
-              metrics: {
-                ...c.metrics,
-                reportedRate: Math.min(95, c.metrics.reportedRate + 8),
-                phishProneRate: Math.max(2, c.metrics.phishProneRate - 4),
-              },
+              totalSent: (c.totalSent || 0) + 40,
+              openedCount: (c.openedCount || 0) + 36,
+              reportedCount: (c.reportedCount || 0) + 28,
+              clickedCount: (c.clickedCount || 0) + 5,
+              submittedCredsCount: (c.submittedCredsCount || 0) + 2,
             }
           : c
       )
